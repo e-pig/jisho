@@ -8,7 +8,6 @@
         <div class="register-header">
             <div class="register-tittle-wrapper">
                 <h2 class="register-title">登録画面</h2>
-                <p class="register-link">アカウントをお持の方は<a href="{{ route('login.form') }}">こちら</a>からログイン</p>
             </div>
             <a  href="{{ route('home') }}">
                 <button class="register-nav-button">検索画面へ</button>

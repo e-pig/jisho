@@ -82,3 +82,16 @@ textarea {
 .search-button:hover {
     background-color: #218838;
 }
+
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.search-results li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+}

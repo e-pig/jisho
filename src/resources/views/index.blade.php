@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<p>検索結果件数: {{ count($dictionaries) }}</p>
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 
 <div class="search">
@@ -10,6 +11,11 @@
             <a href="{{ route('dictionary.register') }}">
                 <button class="nav-button">登録画面へ</button>
             </a>
+
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button class="nav-button">ログアウト</button>
+            </form>
         </div>
 
         {{-- 成功メッセージ --}}
